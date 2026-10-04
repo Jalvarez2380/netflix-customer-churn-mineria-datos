@@ -31,22 +31,35 @@ st.markdown(
         background: #252525 !important; color: white !important; }
     input { color: white !important; }
     div[data-baseweb="select"] > div {
-        background-color: #f4f4f4 !important;
-        color: #111111 !important;
+        background-color: #262626 !important;
+        border-color: #6b6b6b !important;
+        color: #ffffff !important;
     }
 
     div[data-baseweb="select"] span,
     div[data-baseweb="select"] input {
-        color: #111111 !important;
-        -webkit-text-fill-color: #111111 !important;
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+
+    div[data-baseweb="select"] svg {
+        color: #ffffff !important;
+        fill: #ffffff !important;
     }
 
     div[data-baseweb="popover"],
+    div[data-baseweb="popover"] ul,
     div[data-baseweb="popover"] li,
     div[role="listbox"],
     div[role="option"] {
-        background-color: #ffffff !important;
-        color: #111111 !important;
+        background-color: #262626 !important;
+        color: #ffffff !important;
+    }
+
+    div[role="option"]:hover,
+    div[role="option"][aria-selected="true"] {
+        background-color: #404040 !important;
+        color: #ffffff !important;
     }
     [data-testid="stFormSubmitButton"] button {
         background: #e50914; color: white; border: 0; font-weight: 700; }
