@@ -27,9 +27,27 @@ st.markdown(
     .brand { color: #e50914; font-weight: 900; letter-spacing: .2em; }
     [data-testid="stForm"] { background: #171717; border: 1px solid #333;
         border-top: 4px solid #e50914; border-radius: 12px; padding: 24px; }
-    [data-testid="stNumberInputContainer"], [data-baseweb="select"] > div {
+    [data-testid="stNumberInputContainer"] {
         background: #252525 !important; color: white !important; }
     input { color: white !important; }
+    div[data-baseweb="select"] > div {
+        background-color: #f4f4f4 !important;
+        color: #111111 !important;
+    }
+
+    div[data-baseweb="select"] span,
+    div[data-baseweb="select"] input {
+        color: #111111 !important;
+        -webkit-text-fill-color: #111111 !important;
+    }
+
+    div[data-baseweb="popover"],
+    div[data-baseweb="popover"] li,
+    div[role="listbox"],
+    div[role="option"] {
+        background-color: #ffffff !important;
+        color: #111111 !important;
+    }
     [data-testid="stFormSubmitButton"] button {
         background: #e50914; color: white; border: 0; font-weight: 700; }
     [data-testid="stFormSubmitButton"] button:hover { background: #b20710; color: white; }
