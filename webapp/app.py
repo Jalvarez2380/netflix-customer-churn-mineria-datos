@@ -30,37 +30,40 @@ st.markdown(
     [data-testid="stNumberInputContainer"] {
         background: #252525 !important; color: white !important; }
     input { color: white !important; }
-    div[data-baseweb="select"] > div {
-        background-color: #262626 !important;
-        border-color: #6b6b6b !important;
-        color: #ffffff !important;
-    }
 
-    div[data-baseweb="select"] span,
-    div[data-baseweb="select"] input {
+    [data-testid="stSelectbox"] [role="group"],
+    [data-testid="stSelectbox"] .react-aria-ComboBox {
+        background-color: #252525 !important;
+        border-color: #6b6b6b !important;
+        border-radius: 0.5rem !important;
+    }
+    [data-testid="stSelectbox"] input[role="combobox"] {
+        background-color: #252525 !important;
         color: #ffffff !important;
         -webkit-text-fill-color: #ffffff !important;
     }
-
-    div[data-baseweb="select"] svg {
+    [data-testid="stSelectbox"] button[aria-label="Open"] {
+        background-color: #252525 !important;
+        color: #ffffff !important;
+    }
+    [data-testid="stSelectbox"] button[aria-label="Open"] svg {
         color: #ffffff !important;
         fill: #ffffff !important;
     }
-
-    div[data-baseweb="popover"],
-    div[data-baseweb="popover"] ul,
-    div[data-baseweb="popover"] li,
-    div[role="listbox"],
-    div[role="option"] {
-        background-color: #262626 !important;
+    [role="listbox"],
+    [role="option"] {
+        background-color: #252525 !important;
         color: #ffffff !important;
     }
-
-    div[role="option"]:hover,
-    div[role="option"][aria-selected="true"] {
+    [role="option"] [data-item-hl] {
+        color: #ffffff !important;
+    }
+    [role="option"]:hover,
+    [role="option"][aria-selected="true"] {
         background-color: #404040 !important;
         color: #ffffff !important;
     }
+
     [data-testid="stFormSubmitButton"] button {
         background: #e50914; color: white; border: 0; font-weight: 700; }
     [data-testid="stFormSubmitButton"] button:hover { background: #b20710; color: white; }
